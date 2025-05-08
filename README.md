@@ -9,6 +9,18 @@ A Streamlit-based chatbot that allows you to upload text files and ask questions
 - Memory of conversation context
 - Real-time responses
 - Document-based question answering
+- Shows top 3 most relevant chunks for each answer
+- Uses cosine similarity for better text matching
+
+## Sample Files
+
+The repository includes sample text files for testing:
+- `company_overview.txt`: Contains information about the company's history, mission, and values
+- `employee_data.txt`: Contains information about employee statistics and policies
+- `financial_data.txt`: Contains financial information and metrics
+- `product_portfolio.txt`: Contains details about products and services
+
+You can use these files to test the chatbot or replace them with your own text files.
 
 ## Setup
 
@@ -32,6 +44,15 @@ A Streamlit-based chatbot that allows you to upload text files and ask questions
 3. Upload your text files (up to 5)
 4. Wait for the files to be processed
 5. Start asking questions about the content of your documents
+
+## How it Works
+
+1. The application uses LangChain to process and chunk your documents
+2. Documents are embedded using OpenAI's embeddings
+3. When you ask a question:
+   - The system finds the 3 most relevant chunks using cosine similarity
+   - These chunks are used to generate a context-aware response
+   - You can view the relevant chunks used for each answer
 
 ## Requirements
 
