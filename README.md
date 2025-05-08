@@ -12,6 +12,20 @@ A Streamlit-based chatbot that allows you to upload text files and ask questions
 - Shows top 3 most relevant chunks for each answer
 - Uses cosine similarity for better text matching
 
+## Screenshots
+
+### 1. File Upload and Processing
+![File upload and processing](screenshots/file_upload.png)
+*The user uploads up to 5 text files. After processing, a success message is shown, indicating you can start asking questions.*
+
+### 2. Asking a Question and Viewing Relevant Chunks
+![Chatbot answer and relevant chunks](screenshots/chat_query_1.png)
+*The user asks a question. The chatbot provides an answer and displays the top 3 most relevant chunks from the uploaded documents, with the most relevant chunk expanded.*
+
+### 3. Viewing All Relevant Chunks
+![All relevant chunks](screenshots/chat_query_2.png)
+*All three relevant chunks are shown in expandable sections, allowing the user to inspect the context used for the answer.*
+
 ## Sample Files
 
 The repository includes sample text files for testing:
